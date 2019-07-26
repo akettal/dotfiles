@@ -6,11 +6,27 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 
 # Bundler
-alias b="bundle"
+alias be="bundle exec"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
+alias rc="rails c"
+alias rs="rails s"
+alias fs="foreman start"
+
+# Heroku
+alias h="heroku"
+
+# Git
+alias gci='git commit'
+alias grh='git reset HEAD'
+alias gdc='git diff --cached'
+alias gs='git stash'
+alias gsp='git stash pop'
+
+# Docker
+alias dc='docker-compose'
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
